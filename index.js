@@ -5,5 +5,5 @@ http.createServer(function(req, res) {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Hello World!");
     }).listen(port, function() { 
-        console.log(`Node server is running on port ${port}...`); 
+        console.log(`Node server is now running on port ${port}...`); 
 }); 
