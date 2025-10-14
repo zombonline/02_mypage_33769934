@@ -15,7 +15,7 @@ http.createServer(function(req, res) {
         }
     }); 
     } else {
-        sendFileContent(res, req.url.substr(1), "text/html");
+        sendFileContent(res, req.url.substr(1), "text/plain");
     }
     }).listen(port, function() { 
         console.log(`Node server is now running on port ${port}...`); 
