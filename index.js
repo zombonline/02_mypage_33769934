@@ -24,6 +24,7 @@ http.createServer(function(req, res) {
 function sendFileContent(res, fileName, contentType){
     fs.readFile(fileName, function(err, data){
         if(err){
+            console.log(err);
             res.writeHead(404);
             res.end("404 Not Found");
         } else {
