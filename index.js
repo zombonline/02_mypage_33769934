@@ -28,7 +28,7 @@ function sendFileContent(res, fileName, contentType){
             res.writeHead(404);
             res.end("404 Not Found");
         } else {
-            res.writeHead(200, { "Content-Type": contentType });
+            res.writeHead(200, { "Content": contentType });
             res.end(data);
         }
     });
